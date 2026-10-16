@@ -38,7 +38,7 @@
     <div class="mfilters m-only" style="display:flex;flex-direction:column;gap:8px;padding:12px 0">
         <div class="chips scroll" style="padding:0 16px" role="group" aria-label="Thème">
             <button type="button" class="chip" data-f="theme" data-v="" aria-pressed="true"><span class="dot"></span>Tout</button>
-            @foreach(['ia', 'cyber', 'data'] as $t)<button type="button" class="chip" data-f="theme" data-v="{{ $t }}" aria-pressed="false"><span class="dot" style="background:var(--{{ $t }})"></span>{{ TechPulse::themeLabel($t) }}</button>@endforeach
+            @foreach(TechPulse::READER_THEMES as $t)<button type="button" class="chip" data-f="theme" data-v="{{ $t }}" aria-pressed="false"><span class="dot" style="background:var(--{{ $t }})"></span>{{ TechPulse::themeLabel($t) }}</button>@endforeach
         </div>
         <div class="chips scroll" style="padding:0 16px" role="group" aria-label="Niveau">
             <button type="button" class="chip sm" data-f="level" data-v="" aria-pressed="true">Tous niveaux</button>
@@ -48,7 +48,7 @@
     <aside class="rail d-only" aria-label="Filtres" style="padding-bottom:32px">
         <div class="rail-h lbl">Thème</div>
         <button type="button" class="frow" style="height:44px" role="radio" data-f="theme" data-v="" aria-checked="true"><span class="box round"></span><span class="dot"></span>Tout</button>
-        @foreach(['ia', 'cyber', 'data'] as $t)<button type="button" class="frow" style="height:44px" role="radio" data-f="theme" data-v="{{ $t }}" aria-checked="false"><span class="box round"></span><span class="dot" style="background:var(--{{ $t }})"></span>{{ TechPulse::themeLabel($t) }}</button>@endforeach
+        @foreach(TechPulse::READER_THEMES as $t)<button type="button" class="frow" style="height:44px" role="radio" data-f="theme" data-v="{{ $t }}" aria-checked="false"><span class="box round"></span><span class="dot" style="background:var(--{{ $t }})"></span>{{ TechPulse::themeLabel($t) }}</button>@endforeach
         <div class="rail-h lbl sep">Niveau</div>
         <button type="button" class="frow" style="height:44px" role="radio" data-f="level" data-v="" aria-checked="true"><span class="box round"></span>Tous niveaux</button>
         @foreach(TechPulse::LEVELS as $l => $label)<button type="button" class="frow" style="height:44px" role="radio" data-f="level" data-v="{{ $l }}" aria-checked="false"><span class="box round"></span>{{ $label }}</button>@endforeach

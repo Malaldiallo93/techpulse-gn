@@ -10,6 +10,13 @@ class GlossarySeeder extends Seeder
 {
     /** [terme, anglais, thème, définition, exemple, mots-clés de recherche] */
     public const TERMS = [
+        ['Application hybride', 'Cross-platform app', 'dev', 'Application mobile écrite une seule fois et publiée à la fois sur Android et sur iPhone.', 'Une appli de livraison créée avec Flutter pour les deux plateformes.', 'flutter react native mobile'],
+        ['Application web progressive', 'Progressive web app (PWA)', 'dev', 'Site web qui s’installe comme une application, fonctionne hors ligne et reste léger.', 'Un catalogue de boutique consultable sans réseau.', 'pwa hors ligne'],
+        ['Back-end', 'Back-end', 'dev', 'Partie invisible d’une application : le serveur, la base de données et la logique métier.', 'Le serveur qui enregistre ta commande quand tu cliques sur « Acheter ».', 'serveur'],
+        ['Framework', 'Framework', 'dev', 'Boîte à outils de code prête à l’emploi qui structure une application et évite de tout réécrire.', 'Laravel pour le web en PHP, Flutter pour le mobile.', 'laravel flutter react'],
+        ['Front-end', 'Front-end', 'dev', 'Partie visible d’une application : ce que l’utilisateur voit et touche à l’écran.', 'Les boutons, les formulaires et les pages d’un site.', 'interface html css javascript'],
+        ['Git', 'Git', 'dev', 'Outil qui enregistre l’historique des modifications d’un code et permet de travailler à plusieurs.', 'Revenir à la version d’hier après une erreur.', 'github versionner commit'],
+        ['Responsive design', 'Responsive design', 'dev', 'Conception d’une page qui s’adapte automatiquement à la taille de l’écran, du téléphone à l’ordinateur.', 'Un menu qui se replie en icône sur un petit écran.', 'mobile adaptatif'],
         ['Algorithme', 'Algorithm', 'ia', 'Suite d’instructions précises qui permet à un ordinateur de résoudre un problème ou d’accomplir une tâche.', 'Le fil d’actualité d’un réseau social est trié par un algorithme.', ''],
         ['API', 'API', 'data', 'Porte d’entrée qui permet à deux logiciels d’échanger des données selon des règles définies.', 'Une appli météo récupère ses prévisions via l’API d’un service spécialisé.', ''],
         ['Apprentissage automatique', 'Machine learning', 'ia', 'Méthode où un programme apprend à partir d’exemples au lieu de suivre des règles écrites à la main.', 'Un filtre anti-spam apprend à reconnaître les messages indésirables.', 'ml'],

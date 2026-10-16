@@ -10,7 +10,7 @@ class ArticleController extends Controller
 {
     public const PER_PAGE = 20;
 
-    public const TAGS = ['Afrique', 'Outils gratuits', 'Open source', 'Emploi', 'Arnaques', 'Mobile money', 'Éthique', 'Vie privée', 'Réglementation'];
+    public const TAGS = ['Afrique', 'Outils gratuits', 'Open source', 'Emploi', 'Arnaques', 'Mobile money', 'Éthique', 'Vie privée', 'Réglementation', 'Web', 'Mobile'];
 
     public function index()
     {

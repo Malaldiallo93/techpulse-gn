@@ -13,6 +13,8 @@ class CourseSeeder extends Seeder
         'comprendre-les-modeles-de-langage' => ['Expliquer comment un modèle génère du texte', 'Repérer une réponse inventée', 'Formuler une demande précise'],
         'sql-pour-debuter' => ['Lire et filtrer une table', 'Calculer des moyennes par groupe', 'Relier deux tables'],
         'securiser-un-site-web' => ['Corriger les failles les plus courantes', 'Mettre en place des sauvegardes fiables', 'Auditer un site existant'],
+        'creer-ton-premier-site-web' => ['Écrire une page en HTML et CSS', 'L’adapter à tous les écrans', 'Publier ton site en ligne'],
+        'premiere-application-mobile-flutter' => ['Créer une appli Android et iPhone', 'Utiliser une API', 'Faire fonctionner ton appli hors ligne'],
         'creer-un-assistant-conversationnel' => ['Concevoir un assistant utile et honnête', 'Le relier à tes propres documents', 'Le tester avec de vrais utilisateurs'],
     ];
 
@@ -81,6 +83,27 @@ class CourseSeeder extends Seeder
                     ['Tester avec de vrais utilisateurs', 'Projet', 30, 'Un protocole de test simple.'],
                     ['Protéger les données', 'Leçon', 25, 'Ce qu’il ne faut jamais envoyer au modèle.'],
                     ['Présenter son prototype', 'Quiz', 25, 'Une démo de 5 minutes et un quiz final.'],
+                ]],
+            ['creer-ton-premier-site-web', 'dev', 1, 'Créer ton premier site web', 'Créer ton premier', 'site web_', 760,
+                'HTML, CSS et un peu de JavaScript : de la page blanche à un site publié, testé sur téléphone.', [
+                    ['Comment fonctionne une page web', 'Leçon', 12, 'Navigateur, serveur, HTML : qui fait quoi.'],
+                    ['Écrire ta première page en HTML', 'Exercice', 18, 'Titres, paragraphes, liens et images.'],
+                    ['Mettre en forme avec CSS', 'Leçon', 20, 'Couleurs, polices et espacements.'],
+                    ['Une page qui s’adapte au téléphone', 'Exercice', 18, 'Le responsive design, pas à pas.'],
+                    ['Un peu d’interaction avec JavaScript', 'Leçon', 20, 'Un bouton qui réagit, un formulaire qui vérifie.'],
+                    ['Publier ton site gratuitement', 'Leçon', 12, 'Mettre ton site en ligne et partager le lien.'],
+                    ['Projet : ta page de présentation', 'Projet', 20, 'Un mini-portfolio à montrer aux recruteurs.'],
+                ]],
+            ['premiere-application-mobile-flutter', 'dev', 2, 'Ta première application mobile avec Flutter', 'Ta première', 'appli mobile_', 1540,
+                'Une application Android et iPhone avec un seul code, légère et utilisable hors ligne.', [
+                    ['Installer Flutter sans y passer la journée', 'Leçon', 20, 'Les outils minimum, et un plan B sur un vieux PC.'],
+                    ['Les widgets, briques de l’interface', 'Leçon', 22, 'Textes, boutons, listes.'],
+                    ['Naviguer entre les écrans', 'Exercice', 18, 'Une appli de trois écrans.'],
+                    ['Récupérer des données sur Internet', 'Leçon', 22, 'Appeler une API et afficher le résultat.'],
+                    ['Garder les données hors ligne', 'Exercice', 20, 'Stocker sur le téléphone, synchroniser plus tard.'],
+                    ['Alléger ton application', 'Leçon', 15, 'Réduire le poids pour les téléphones pleins.'],
+                    ['Tester sur un vrai téléphone', 'Exercice', 15, 'Les erreurs qu’on ne voit pas sur l’ordinateur.'],
+                    ['Projet : une appli de prix des marchés', 'Projet', 28, 'Une appli complète, à publier.'],
                 ]],
         ];
 

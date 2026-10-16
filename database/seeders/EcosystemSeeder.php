@@ -15,6 +15,7 @@ class EcosystemSeeder extends Seeder
         $events = [
             [8, '18:00', '18 h', 'Meetup cyber : sécuriser le mobile money', 'cyber', 'Meetup', 'Conakry, Kaloum', 'Conakry', 'Gratuit'],
             [12, '10:00', '10 h', 'Atelier Python pour débutantes', 'data', 'Atelier', 'En ligne', 'En ligne', 'Gratuit'],
+            [17, '16:00', '16 h', 'Atelier : publier ton premier site web', 'dev', 'Atelier', 'Conakry, Matam', 'Conakry', 'Gratuit'],
             [24, '09:00', '48 h', 'Hackathon IA pour la santé', 'ia', 'Hackathon', 'Dakar et en ligne', 'En ligne', 'Sur candidature'],
             [36, '09:00', '9 h', 'Journée open data : les chiffres de la région', 'data', 'Journée', 'Kankan, université', 'Kankan', 'Gratuit'],
             [45, '15:00', '15 h', 'Conférence : l’IA va-t-elle changer nos métiers ?', 'ia', 'Conférence', 'Conakry, Ratoma', 'Conakry', 'Gratuit'],
@@ -46,6 +47,7 @@ class EcosystemSeeder extends Seeder
             ['FC', 'Femmes & Code Guinée', 'Association', 'Conakry', 610, 'Ateliers mensuels', 'Telegram', 'opp'],
             ['CS', 'Cyber Sécurité Conakry', 'Meetup', 'Conakry', 380, 'Un meetup par mois', 'Telegram', 'cyber'],
             ['DK', 'Data Kankan', 'Groupe d’entraide', 'Kankan', 120, 'Défis hebdomadaires', 'WhatsApp', 'data'],
+            ['DC', 'Dev Conakry', 'Communauté de développeurs', 'Conakry', 520, 'Un meetup web et mobile par mois', 'WhatsApp', 'dev'],
             ['PL', 'Python Labé', 'Club', 'Labé', 85, 'Samedis matin', 'WhatsApp', 'data'],
             ['OD', 'Open Data GN', 'Communauté en ligne', 'En ligne', 950, 'Discussions continues', 'Telegram', 'data'],
         ];
@@ -60,7 +62,7 @@ class EcosystemSeeder extends Seeder
             ['AD', 'Aïssatou Diallo', 'Data et parcours d’apprentissage', 'var(--data)'],
             ['IC', 'Ibrahima Camara', 'Intelligence artificielle', 'var(--ia)'],
             ['FB', 'Fatoumata Bah', 'Opportunités et communauté', 'var(--opp)'],
-            ['MC', 'Mamadou Condé', 'Développement et performance', 'var(--red)'],
+            ['MC', 'Mamadou Condé', 'Développement et performance', 'var(--dev)'],
             ['KT', 'Kadiatou Touré', 'Relecture et glossaire', 'oklch(0.6 0 0)'],
         ];
         foreach ($team as $i => [$mono, $name, $role, $color]) {

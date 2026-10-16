@@ -1,6 +1,6 @@
 # TechPulse · la tech, en clair, pour toi
 
-Plateforme francophone de veille IA, cybersécurité et data pour les jeunes de Guinée et d’Afrique francophone.
+Plateforme francophone de veille IA, cybersécurité, data et développement pour les jeunes de Guinée et d’Afrique francophone.
 Implémentation du handoff Claude Design (Design System v2 « Journal », 11 écrans mobile et desktop).
 
 - **Stack** : Laravel 13 (PHP 8.3), SQLite par défaut, vues Blade rendues côté serveur.
@@ -47,6 +47,7 @@ php artisan serve               # http://localhost:8000
   - Les métadonnées des contenus enregistrés vivent dans `localStorage`, les pages dans le cache `techpulse-saved`.
   - L’essentiel du jour se télécharge une fois par jour, en Wi-Fi uniquement, et le réglage est désactivable.
 - **Économie de données** : attribut `data-saver` sur `<html>`. Il est activé par défaut si `navigator.connection.saveData` est vrai, et il masque tout élément `.img`.
+- **Thématiques** : IA, Cyber, Data et Dev (développement web et mobile), plus Opportunités. Elles sont déclarées dans `App\Support\TechPulse::THEMES` et `READER_THEMES`. Chaque thématique a deux couleurs dans `public/css/techpulse.css` : `--dev` sur fond clair et `--devD` sur fond noir, par exemple.
 - **Mode sombre** : il suit `prefers-color-scheme`, avec un réglage manuel dans le menu.
 - **Police** : Archivo variable 400–700, sous-ensemble latin de 35 Ko, hébergée dans `public/fonts`. Aucune requête vers Google.
 - **Back-office** :

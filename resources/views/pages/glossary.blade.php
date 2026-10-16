@@ -12,7 +12,7 @@
         <div class="gl-hmain">
             <div class="gl-hrow">
                 <h1 class="display gl-t">Glossaire<br><span class="g">{{ $terms->count() }} termes_</span></h1>
-                <p class="d-only" style="font-size:17px;line-height:1.55;color:var(--onblack2);max-width:380px">Les mots de l’IA, de la cybersécurité et de la data, expliqués en une phrase avec un exemple.</p>
+                <p class="d-only" style="font-size:17px;line-height:1.55;color:var(--onblack2);max-width:380px">Les mots de l’IA, de la cybersécurité, de la data et du développement, expliqués en une phrase avec un exemple.</p>
             </div>
             <form class="gl-search" role="search" action="{{ route('glossary') }}" onsubmit="return false">
                 <span class="gl-si"><x-icon n="search" s="22" /></span>
@@ -41,12 +41,12 @@
     <aside class="gl-side">
         <div class="chips scroll m-only gl-mthemes" role="group" aria-label="Thème">
             <button type="button" class="chip" data-gtheme="" aria-pressed="true"><span class="dot"></span>Tout</button>
-            @foreach(['ia', 'cyber', 'data'] as $t)<button type="button" class="chip" data-gtheme="{{ $t }}" aria-pressed="false"><span class="dot" style="background:var(--{{ $t }})"></span>{{ TechPulse::themeLabel($t) }}</button>@endforeach
+            @foreach(TechPulse::READER_THEMES as $t)<button type="button" class="chip" data-gtheme="{{ $t }}" aria-pressed="false"><span class="dot" style="background:var(--{{ $t }})"></span>{{ TechPulse::themeLabel($t) }}</button>@endforeach
         </div>
         <div class="d-only" style="display:flex;flex-direction:column">
             <div class="rail-h lbl">Thème</div>
             <button type="button" class="frow" style="height:44px" role="radio" data-gtheme="" aria-checked="true"><span class="box round"></span><span class="dot"></span><span>Tout</span><span class="n">{{ $terms->count() }}</span></button>
-            @foreach(['ia', 'cyber', 'data'] as $t)
+            @foreach(TechPulse::READER_THEMES as $t)
                 <button type="button" class="frow" style="height:44px" role="radio" data-gtheme="{{ $t }}" aria-checked="false"><span class="box round"></span><span class="dot" style="background:var(--{{ $t }})"></span><span>{{ TechPulse::themeLabel($t) }}</span><span class="n">{{ $terms->where('theme', $t)->count() }}</span></button>
             @endforeach
         </div>

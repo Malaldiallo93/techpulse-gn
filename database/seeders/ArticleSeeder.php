@@ -229,6 +229,63 @@ class ArticleSeeder extends Seeder
                 'source' => ['Rédaction TechPulse', 'Test comparatif de la rédaction', 'en français', 3, 'https://example.org/outils-visualisation'],
                 'reviewer' => 'Aïssatou Diallo',
             ],
+            [
+                'day' => 0, 'time' => '9:40', 'theme' => 'dev', 'level' => 1, 'min' => 5,
+                'title' => 'Flutter ou React Native : quel outil pour ta première application mobile ?',
+                'summary' => 'Les deux permettent de créer une appli Android et iPhone avec un seul code. Nos critères pour choisir selon ton profil.',
+                'essential' => 'Flutter et React Native sont les deux [[framework|frameworks]] les plus utilisés pour créer une application mobile avec un seul code. Le premier séduit par ses performances, le second par sa proximité avec le web.',
+                'points' => [
+                    'Si tu connais déjà JavaScript, React Native te fera gagner du temps.',
+                    'Flutter produit des applis fluides, même sur un téléphone d’entrée de gamme.',
+                    'Les deux sont gratuits et très demandés dans les offres d’emploi.',
+                ],
+                'why' => 'Une première appli publiée vaut mieux qu’un long CV : c’est la preuve concrète que tu sais construire quelque chose.',
+                'body' => [
+                    'Une [[application-hybride|application hybride]] partage l’essentiel de son code entre Android et iPhone. Pour un développeur seul ou une petite équipe, c’est souvent le seul moyen réaliste de couvrir les deux plateformes.',
+                    'Attention au poids final : une appli légère s’installe plus facilement sur un téléphone déjà plein. Teste toujours ton application sur un vieux modèle avant de la publier.',
+                ],
+                'tags' => ['Mobile', 'Outils gratuits'],
+                'source' => ['Rédaction TechPulse', 'Comparatif de la rédaction', 'en français', 1, 'https://example.org/flutter-react-native'],
+                'reviewer' => 'Mamadou Condé',
+            ],
+            [
+                'day' => 1, 'time' => '12:10', 'theme' => 'dev', 'level' => 2, 'min' => 6,
+                'title' => 'Une boutique de Conakry vend en ligne malgré une connexion lente grâce à une PWA',
+                'summary' => 'Pages légères, catalogue disponible hors ligne, commande envoyée au retour du réseau : retour sur un projet local.',
+                'essential' => 'Une boutique de Conakry a remplacé son application lourde par une [[application-web-progressive|application web progressive]]. Résultat : un site qui s’ouvre en deux secondes en 3G et un catalogue consultable sans réseau.',
+                'points' => [
+                    'Le site pèse moins de 200 Ko au premier chargement.',
+                    'Le catalogue reste consultable hors ligne grâce au cache du navigateur.',
+                    'Les commandes passées sans réseau partent automatiquement au retour de la connexion.',
+                ],
+                'why' => 'Si tu développes pour des utilisateurs guinéens, la légèreté est une fonctionnalité à part entière, pas un détail technique.',
+                'body' => [
+                    'Le [[front-end|front-end]] a été réécrit sans framework lourd, avec un design [[responsive-design|responsive]] pensé d’abord pour les petits écrans.',
+                    'Côté [[back-end|back-end]], une simple API reçoit les commandes. Le développeur explique que la contrainte du réseau l’a obligé à simplifier, et que les clients l’ont remarqué.',
+                ],
+                'tags' => ['Web', 'Afrique'],
+                'source' => ['Rédaction TechPulse', 'Entretien avec l’équipe du projet', 'en français', 2, 'https://example.org/pwa-boutique-conakry'],
+                'reviewer' => 'Mamadou Condé',
+            ],
+            [
+                'day' => 2, 'time' => '10:15', 'theme' => 'dev', 'level' => 1, 'min' => 4,
+                'title' => 'Git en 20 minutes : versionner son code sans perdre son travail',
+                'summary' => 'Les cinq commandes à connaître pour garder l’historique de ton code et travailler à plusieurs.',
+                'essential' => '[[git|Git]] garde la trace de chaque modification de ton code. Cinq commandes suffisent pour commencer, et ton travail est à l’abri d’une mauvaise manipulation.',
+                'points' => [
+                    'git init, add et commit suffisent pour démarrer.',
+                    'Un dépôt en ligne sert de sauvegarde et de portfolio.',
+                    'Les recruteurs regardent de plus en plus les projets publiés.',
+                ],
+                'why' => 'Un ordinateur volé ou une coupure de courant ne doivent plus te coûter des semaines de travail.',
+                'body' => [
+                    'Chaque « commit » est une photo de ton projet à un instant donné. Tu peux revenir en arrière à tout moment, ou comparer deux versions.',
+                    'Publier ton dépôt en ligne te donne aussi une vitrine : c’est souvent le premier lien que demandent les recruteurs pour un poste de développeur junior.',
+                ],
+                'tags' => ['Outils gratuits', 'Open source', 'Emploi'],
+                'source' => ['Documentation officielle de Git', 'Pro Git, chapitre 1', 'en français', 30, 'https://example.org/pro-git'],
+                'reviewer' => 'Mamadou Condé',
+            ],
         ];
 
         foreach ($articles as $a) {

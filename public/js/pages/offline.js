@@ -4,7 +4,7 @@
   var K = window.TechPulse, d = document;
   var root = K.$('[data-offline-page]'); if (!root) return;
   var TYPES = [['a', 'Articles'], ['p', 'Parcours'], ['o', 'Opportunités']];
-  var THEME = { ia: 'IA', cyber: 'Cyber', data: 'Data', opp: 'Opportunités' };
+  var THEME = { ia: 'IA', cyber: 'Cyber', data: 'Data', dev: 'Dev', opp: 'Opportunités' };
   var tab = 'all';
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function size(kb) { return kb >= 1000 ? (kb / 1024).toFixed(1).replace('.', ',') + ' Mo' : Math.round(kb) + ' Ko'; }

@@ -37,6 +37,19 @@ class PublicPagesTest extends TestCase
             ->assertSee('Tech<br>Pulse<br><em>Brief</em>', false);
     }
 
+    public function test_development_theme_is_available_everywhere(): void
+    {
+        $this->get('/actualites')->assertOk()
+            ->assertSee('data-f="theme" data-v="dev"', false)
+            ->assertSee('Flutter ou React Native', false);
+        $this->get('/glossaire')->assertOk()->assertSee('data-gtheme="dev"', false)->assertSee('Application web progressive');
+        $this->get('/apprendre')->assertOk()->assertSee('Créer ton premier site web');
+        $this->get('/a-propos')->assertOk()->assertSee('value="Dev"', false);
+
+        $a = Article::where('theme', 'dev')->first();
+        $this->get($a->url())->assertOk()->assertSee('Développement')->assertSee('class="badge line-b t-dev"', false);
+    }
+
     public function test_drafts_in_review_are_not_public(): void
     {
         $draft = Article::where('status', 'review')->first();

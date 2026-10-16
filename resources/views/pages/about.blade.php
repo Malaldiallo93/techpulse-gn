@@ -26,7 +26,7 @@
         <div class="ab-crumb"><span class="lbl m-only" style="color:var(--onblack2)">À propos</span><span class="d-only meta">À propos</span></div>
         <div class="ab-tcol"><h1 class="display ab-t">La tech,<br>en clair,<br><span class="g">pour toi_</span></h1></div>
         <div class="ab-mission">
-            <p class="ab-mtx">TechPulse rend l’information sur l’IA, la cybersécurité et la data accessible, compréhensible et utile aux jeunes de Guinée et d’Afrique francophone.</p>
+            <p class="ab-mtx">TechPulse rend l’information sur l’IA, la cybersécurité, la data et le développement accessible, compréhensible et utile aux jeunes de Guinée et d’Afrique francophone.</p>
             <span class="meta">«&nbsp;TechPulse&nbsp;» : le pouls de la tech, pris chaque jour pour toi.</span>
             <a class="btn primary tall d-only" href="#contribuer" style="margin-top:8px">Devenir contributeur<x-icon n="chev" s="16" /></a>
         </div>
