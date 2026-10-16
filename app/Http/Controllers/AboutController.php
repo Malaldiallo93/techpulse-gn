@@ -17,7 +17,7 @@ class AboutController extends Controller
         ['Animer une communauté locale', '1 événement par mois'],
     ];
 
-    public const DOMAINS = ['IA' => 'ia', 'Cyber' => 'cyber', 'Data' => 'data', 'Opportunités' => 'opp'];
+    public const DOMAINS = ['IA' => 'ia', 'Cyber' => 'cyber', 'Data' => 'data', 'Dev' => 'dev', 'Opportunités' => 'opp'];
 
     public function index()
     {

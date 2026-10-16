@@ -17,7 +17,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{!! trim($__env->yieldContent('title')) !== '' ? $__env->yieldContent('title').' · TechPulse' : 'TechPulse · La tech, en clair, pour toi' !!}</title>
-<meta name="description" content="@yield('description', 'Veille IA, cybersécurité et data pour les jeunes de Guinée et d’Afrique francophone : actus résumées, opportunités, parcours et glossaire.')">
+<meta name="description" content="@yield('description', 'Veille IA, cybersécurité, data et développement pour les jeunes de Guinée et d’Afrique francophone : actus résumées, opportunités, parcours et glossaire.')">
 <meta name="theme-color" content="#070707">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <link rel="manifest" href="{{ asset('manifest.webmanifest') }}">
@@ -101,7 +101,7 @@
         @unless($footerCompact ?? false)
         <div style="padding:28px 16px 20px;display:flex;flex-direction:column;gap:12px;border-bottom:1px solid var(--blackrule)" @if($nav === 'home') hidden @endif>
             <span class="caps" style="font-size:34px">La tech,<br>en clair<br><span class="g" style="color:var(--onblack2)">pour toi_</span></span>
-            <span style="font-size:15px;line-height:1.5;color:var(--onblack2)">Veille IA, cybersécurité et data, pour les jeunes de Guinée et d’Afrique.</span>
+            <span style="font-size:15px;line-height:1.5;color:var(--onblack2)">Veille IA, cybersécurité, data et développement, pour les jeunes de Guinée et d’Afrique.</span>
         </div>
         @endunless
         <div class="ftr-links">

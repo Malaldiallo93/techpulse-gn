@@ -14,8 +14,12 @@ class TechPulse
         'ia' => ['label' => 'IA', 'long' => 'Intelligence artificielle'],
         'cyber' => ['label' => 'Cyber', 'long' => 'Cybersécurité'],
         'data' => ['label' => 'Data', 'long' => 'Data'],
+        'dev' => ['label' => 'Dev', 'long' => 'Développement'],
         'opp' => ['label' => 'Opportunités', 'long' => 'Opportunités'],
     ];
+
+    /** Thématiques éditoriales (filtres, glossaire, parcours) ; « opp » n'en fait pas partie. */
+    public const READER_THEMES = ['ia', 'cyber', 'data', 'dev'];
 
     public const LEVELS = [1 => 'Débutant', 2 => 'Intermédiaire', 3 => 'Avancé'];
 

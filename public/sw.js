@@ -2,9 +2,9 @@
    - Pages : réseau d'abord, puis cache (pages visitées et contenus enregistrés), puis /hors-ligne.
    - Fichiers statiques : cache d'abord.
    - Index de recherche et glossaire : cache, mis à jour en arrière-plan. */
-var V = 'v2';
+var V = 'v3';
 var STATIC = 'techpulse-static-' + V, PAGES = 'techpulse-pages', SAVED = 'techpulse-saved';
-var PRECACHE = ['/', '/hors-ligne', '/glossaire', '/recherche', '/css/techpulse.css?v=2', '/js/techpulse.js?v=2', '/icons/sprite.svg?v=2', '/fonts/archivo-latin.woff2', '/glossaire.json', '/recherche/index.json', '/manifest.webmanifest'];
+var PRECACHE = ['/', '/hors-ligne', '/glossaire', '/recherche', '/css/techpulse.css?v=3', '/js/techpulse.js?v=3', '/icons/sprite.svg?v=3', '/fonts/archivo-latin.woff2', '/glossaire.json', '/recherche/index.json', '/manifest.webmanifest'];
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(STATIC).then(function (c) { return c.addAll(PRECACHE); }).catch(function () {}).then(function () { return self.skipWaiting(); }));

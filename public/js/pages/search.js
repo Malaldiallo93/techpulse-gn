@@ -7,7 +7,7 @@
   var inputs = K.$$('[data-s-input]'), q = (inputs[0] && inputs[0].value) || '', tab = 'all', index = [];
   var TYPES = [['a', 'Articles'], ['o', 'Opportunités'], ['p', 'Parcours'], ['t', 'Tutoriels']];
   var KICK = { a: 'Article', o: 'Opportunité', p: 'Parcours', t: 'Tutoriel', g: 'Glossaire' };
-  var THEME = { ia: 'IA', cyber: 'Cyber', data: 'Data', opp: 'Opportunités' };
+  var THEME = { ia: 'IA', cyber: 'Cyber', data: 'Data', dev: 'Dev', opp: 'Opportunités' };
   var sprite = '/icons/sprite.svg';
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function icon(n, s, cls) { return '<svg width="' + s + '" height="' + s + '" aria-hidden="true"' + (cls ? ' class="' + cls + '"' : '') + '><use href="' + sprite + '#' + n + '"/></svg>'; }

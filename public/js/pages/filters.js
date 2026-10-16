@@ -133,6 +133,11 @@
     }
 
     render();
+    // Un filtre actif venu de l'URL reste visible dans les rangées de chips qui défilent.
+    K.$$('.chips.scroll [aria-pressed="true"]', box).forEach(function (c) {
+      var row = c.parentNode;
+      if (c.offsetLeft + c.offsetWidth > row.clientWidth) row.scrollLeft = c.offsetLeft - 16;
+    });
     box.techpulseFilters = { state: state, render: render, toggle: toggle };
   }
 

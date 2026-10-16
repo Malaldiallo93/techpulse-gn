@@ -1,7 +1,7 @@
 @extends('layouts.app', ['nav' => 'news'])
 @section('title', 'Actualités')
 
-@php use App\Support\TechPulse; $themes = ['ia', 'cyber', 'data']; $total = $page->total(); @endphp
+@php use App\Support\TechPulse; $themes = TechPulse::READER_THEMES; $total = $page->total(); @endphp
 
 @section('content')
 @include('partials.page-head', [
